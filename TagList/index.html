@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>TagList</title>
+	<link rel='stylesheet' type='text/css' href='styles/bootstrap.css'>
+	<link rel='stylesheet' type='text/css' href='styles/font-awesome.min.css'>
+	<script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+	<script type='text/javascript' src='js/TagList.js'></script>
+</head>
+
+<body>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-xs-12'>
+				<h2 class='text-center'>Простой серый теглист</h2>
+			</div>
+			<div class='col-xs-10 col-xs-offset-1 tagList1'></div>
+		</div>
+		<div class='row'>
+			<div class='col-xs-12'>
+				<h2 class='text-center'>Веселый разноцветный теглист </h2>
+			</div>
+			<div class='col-xs-10 col-xs-offset-1 tagList2'></div>
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var tl1 = new TagList($('.tagList1'),[],false);
+		var tl2 = new TagList($('.tagList2'),[], true);
+	</script>
+</body>
+
+</html>

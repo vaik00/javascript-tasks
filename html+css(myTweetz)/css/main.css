@@ -1,0 +1,424 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Trebuchet MS and Arial fonts used in this work*/
+body {
+	height: 500px;
+}
+
+body {
+	background-color: #ffffff;
+	min-width: 1200px;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	line-height: 38px;
+	background: #484848;
+}
+header:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.header-nav {
+	margin-left: 10%;
+	float: left;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.header-nav a {
+	text-decoration: none;
+}
+
+.header-nav li {
+	display: inline-block;
+	margin-left: 2px;
+	padding: 0 5px;
+}
+
+.header-nav a {
+	color: #919191;
+}
+.header-nav a:hover,
+.header-nav li:hover {
+	color: #e3e3e3;
+}
+
+.login li{
+	display: inline-block;
+	padding: 0 1px;
+}
+
+.login{
+	margin-right: 10%;
+	float:right;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.text{
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	padding-right: 3px;
+	color: #919191
+}
+.usertext{
+	color: #666666
+}
+input{
+	height: 18px;
+	background:#373737;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #2c2c2c;
+}
+.colortext{
+	color: #666666;
+	padding-left: 5px;
+	font-size: 10px;
+}
+button{
+	height: 22px;
+	width: 35px;
+	background: #ec4444;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #f27c7c;
+}
+.button-text{
+	color: #ffffff;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.logo-img,.logo-text-black{
+	float: left;
+}
+.logo-text-black{
+	margin-left: 10px;
+	color: #484848;
+}
+.logo-text-red{
+	display: block;
+	color:#ec4444;
+}
+.logo-text-red,
+.logo-text-black{
+	font-size: 30px;
+	margin-top: 10px;
+	float: left;
+	display: block;
+	text-decoration: none;
+}
+.logo,
+.logo-img,
+.logo-text-red,
+.logo-text-black{
+	display: block;
+}
+.logo{
+	margin-top: 10px;
+}
+.logo:after{
+    content: '';
+    display: block;
+	clear: both; 
+}
+
+.nav,.main-nav{
+	display: block;
+	margin-top: 10px;
+	height: 100%;
+	line-height: 38px;
+	background: #e3e3e3;
+	border-radius: 5px;
+}
+.nav:after{
+	  content: '';
+    display: block;
+	clear: both; 
+}
+.main-nav {
+	margin-top: 9px;
+	float: left;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main-nav a {
+	text-decoration: none;
+}
+.main-nav ul{
+	vertical-align: middle;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 5px;
+	padding: 0 25px;
+}
+
+.main-nav a {
+	color: #919191;
+}
+.main-nav a:hover,
+.main-nav li:hover {
+	color: #484848;
+}
+
+
+  .search {
+  	float:right;
+    width: 200px; /* Ширина поля с кнопкой */
+    min-height: 20px; /* Минимальная высота */
+   }
+   input[type="search"] {
+   	color:#8a8a8a;
+   	font-size: 12px;
+   	background-color: #484848;
+   	margin-left: 22px;
+	margin-top: 4px;
+   	height: 38px;
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 174px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+   }
+   .input>li {
+	position: absolute;
+	margin-top:-33px;
+	margin-left: 168px;
+	color: #b5504c;
+   }
+   h3 {
+	font-family: Trebuchet MS, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 80px;
+	color: #ec4444;
+	text-indent: 10px;
+}
+.main-banner{
+	display: block;
+}
+
+.main-banner:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.banner{
+	margin-top: 40px;
+	float: left;
+}
+.col-right:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.col-right img{
+	float: right;
+	margin-top: 70px;
+}
+.list > li:before {
+	content: '●';
+	position: absolute;
+	margin-left: -22px;
+	color: #44a7ec;
+}
+.list{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+.list > li{
+	color:#b0b0b0;
+	font-family: Trebuchet MS, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+ 	font-size: 16px;
+ 	padding-left: 15px;
+ 	margin-top: 5px;
+}
+.appstore{
+	float: left;
+	margin-left: 15px;
+	margin-top: 70px;
+}
+h2{
+	font-size: 50px;
+	color: #484848;
+	font-family: Trebuchet MS, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+}
+h1{
+	font-size: 20px;
+	font-family: Trebuchet MS, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	color: #77bbf0;
+}
+.bordertext{
+	color: transparent;
+	width: 125px;
+	height: 100px;
+}
+.outline{
+	border-radius: 5px;
+	width: 222px;
+	border: 1px solid #ededed;
+	padding: 5px;
+}
+p{
+	line-height: 15px;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	color: #999999;
+	font-size: 11px;
+	padding-top: 10px;
+}
+.products{
+	display:block;
+	margin-top: 40px;
+}
+.apple:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.apple > img{
+	position: absolute;
+	margin-left: 162px;
+	margin-top: -106px;
+	width: 90px;
+	height: 112px;
+}
+.apple{
+	margin-right: 4px;
+	float: left;
+	width: 23%;
+}
+.blackberry > img{
+	position: absolute;
+	width: 90px;
+	height: 112px;
+	margin-top: -106px;
+	margin-left: 162px;
+}
+.blackberry{
+	margin-left: 4px;
+	margin-right: 4px;
+	float: left;
+	width: 23%;
+}
+.windowsphone > img{
+	position: absolute;
+	width: 90px;
+	height: 112px;
+	margin-top: -106px;
+	margin-left: 162px;
+}
+.windowsphone{
+	margin-right: 4px;
+	margin-left: 4px;
+	float: left;
+	width: 23%;
+}
+.pc > img{
+	position: absolute;
+	width: 90px;
+	height: 112px;
+	margin-top: -106px;
+	margin-left: 162px;
+}
+.pc{
+	margin-left: 4px;
+	float: left;
+	width: 23%;
+}
+.blog{
+	margin-top: 180px;
+}
+.left-blog a,.right-blog a{
+	color: #68b4ef;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+}
+.left-blog > img{
+	padding-top: 20px;
+}
+.left-blog{
+	margin-top: 20px;
+	float: left;
+	width: 45%;
+}
+.right-blog > img{
+	padding-top: 20px;
+}
+.right-blog{
+	margin-top: 20px;
+	margin-right: 100px;
+	float: right;
+	width: 45%;
+}
+.about:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.aboutus a{
+	font-size: 12px;
+	color: #68b4ef;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+}
+.aboutus{
+	margin-top:80px;
+	float: left;
+	width: 43%;
+}
+.feed a{
+	font-size: 12px;
+	color: #68b4ef;
+	font-family: Arial, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+
+}
+.feed{
+	margin-top: 80px;
+	margin-right: 40px;
+	float: right;
+	width: 51%;
+}
+.copyright{
+	font-size: 12px;
+	color: #999999;
+	font-family: Tahoma;
+}
+footer:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+footer{
+	margin-top: 80px;
+	width: 100%;
+	line-height: 70px;
+	background: #484848;
+}
+.social a{
+	margin-right: 15px;
+}
+.social{
+	padding-top: 20px;
+	margin-right: 10%;
+    float:right;
+}
+.copyright a{
+	font-size: 12px;
+	color: #999999;
+	font-family: Tahoma;
+}
+.copyright{
+	margin-top: 20px;
+	margin-left: 10%;
+    float: left;
+}

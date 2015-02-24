@@ -1,0 +1,65 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+.main{
+    width: 1260px;
+    position: absolute;
+}
+.bar{
+    position: relative;
+    float: left;
+    z-index: 5;
+}
+.bar li{
+    list-style: none;
+    background: white;
+    width: 270px;
+    height: 85px;
+    outline: solid #e5e5e5 1px;
+    margin-bottom: 1px;
+    display: block;
+    cursor: pointer;
+}
+.main .active {
+    background: #d07717;
+    outline: none;
+    position: relative;
+}
+.slider{
+    overflow: hidden;
+    z-index: 1;
+    width: 910px;
+    position: relative;
+}
+.slider li{
+    list-style: none;
+    float: left;
+}
+
+.slider ul{
+    padding: 0;
+    margin: 0px;
+    height: 345px;
+    width: 9999px;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
+.active:after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 26px;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 19px solid #d07717;
+    border-bottom: 16px solid transparent;
+    z-index: 100;
+}

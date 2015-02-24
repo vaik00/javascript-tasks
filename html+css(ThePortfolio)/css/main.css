@@ -1,0 +1,420 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	height: 1200px;
+	background: url(../img/background.png);
+	min-width: 990px;
+	color: #8c8c8c;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*header styles*/
+
+header{
+    margin-top: 2%;
+}
+
+header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo{
+    float:left;
+    text-transform: uppercase;
+}
+
+.author, .logo-text {
+    display: block;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.author{
+    color: #db3f4c;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+}
+.logo-text {
+    font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 50px;
+    border-bottom: 4px solid #8c8c8c;
+    height: 46px;
+    color: #8c8c8c;
+}
+
+.logo a:hover .logo-text {
+    border-color: transparent;
+}
+
+/*navigation styles*/
+
+.main-navigation{
+    float:right;
+    font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.main-navigation a{
+    text-decoration: none;
+    color: #bebebe;
+}
+.main-navigation li{
+    display: inline-block;
+    margin: 2px;
+    padding: 0 5px;
+}
+
+.main-navigation .active,
+.main-navigation li:hover {
+    border-bottom: 2px solid #8c8c8c;
+}
+
+.main-navigation .active a,
+.main-navigation li:hover a {
+    color: #8c8c8c;
+}
+
+/*Banner styles*/
+.banner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.hello, .text{
+    display: block;
+}
+.hello{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Estrangelo Edessa", Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 60px;
+    margin-top:40px;
+}
+.text{
+    text-align: center;
+    font-family: "Estrangelo Edessa", Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 55px;
+}
+
+/*about styles*/
+
+.about{
+    display: block;
+    margin-top:10%; 
+}
+
+.about-me{
+    float:left;
+    width: 48%;
+    text-transform: uppercase;
+    font-family: Verdana , Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 40px;
+    color: #d14343;
+    border-bottom:4px solid #bebebe;
+}   
+
+.skills{
+   width: 48%; 
+   float:right;
+   text-transform: uppercase;
+   font-family: Verdana , Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+   font-size: 40px;
+   color: #d14343;
+   border-bottom:4px solid #bebebe;
+}
+
+.aboutcontent{
+    float:left;
+    margin-top: 10px;
+    display: block;
+}
+.abouttext,.aboutcontent img{
+    display: block;
+}
+.abouttext{
+    color:#bebebe;
+    margin-left: 110px;
+}
+.aboutcontent img{
+    float:left;
+    margin-left: 5px;
+}
+.aboutcontent {
+    width: 48%;
+}
+
+}
+.aboutcontent:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.skillscontent:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.skillscontent{
+    display: block;
+    width: 48%;
+    float: right;
+    margin-top: 10px;
+}
+.webtext, .disigntext{
+    display: block;
+}
+
+.webtext{
+    width: 48%;
+    float:left;
+}
+
+
+.designtext{
+    width: 48%;
+    float:right;
+}
+.webtext ul, .designtext ul{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.webtext li, .designtext li{
+color:#dc6565;
+}
+.webtext li span, .designtext li span{
+color:#bebebe;
+}
+.web, .design{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #8c8c8c;
+}
+.Mywork{
+width: 100%;
+height: 100%;
+overflow: auto;
+margin:40px auto;
+margin-left: 5%;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
+}
+.MyWorkContent{
+    display: block;
+}
+
+.Mywork img {
+    width:auto;
+    height:auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/*Myworks Styles*/
+.works{
+    margin-top: 30%;
+    display: block;
+    border-bottom:4px solid #bebebe;
+}
+
+.works:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.title{
+    float:left;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.titlename{
+    color: #d14343;
+    font-family:Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/*navigation styles*/
+
+.works-navigation{
+    float:right;
+    font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.works-navigation a{
+    text-decoration: none;
+    color:#8c8c8c;
+}
+
+.works-navigation ul {
+    padding-left:0;
+}
+
+.works-navigation li{
+    display: inline-block;
+    margin: 2px;
+    padding: 0 5px;
+}
+
+}
+.main-navigation .active,
+.main-navigation li:hover {
+    border-bottom: 2px solid #8c8c8c;
+}
+.works-navigation .active a,
+.works-navigation li:hover a {
+    color: #d14343;
+}
+/*Contact styles*/
+.contact:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact{
+    display: block;
+    margin-top:10%; 
+}
+
+.contact-us{
+    float:left;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: Verdana , Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 40px;
+    color: #d14343;
+    border-bottom:4px solid #bebebe;
+}  
+.addressinfo{
+    float: right;
+    width: 50%;
+}
+.addressinfo img{
+    float: left;
+} 
+.mail{
+    text-decoration:  underline;
+    color:#dc6565;
+}
+.name{
+    float:left;
+    margin-top: 10px;
+}
+.e-mail{
+    float: left;
+    margin-top: 10px;
+}
+
+label{
+    font-family: Verdana, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    position: relative;
+    display: block;
+    padding-right: 160px;
+}
+h3{
+    font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    color: #6c6c6c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+input[type="text"]{
+    margin-right: 22px;
+    width: 220px;
+    height: 33px;
+    background: #e8e8e8;
+}
+textarea{
+    width: 464px;
+    height: 120px;
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color:#c66060;
+    border-radius: 1px; 
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+    font-size: 24px;
+    background: #c66060;
+}
+textarea{
+    background: #e8e8e8;
+}
+.chat{
+    float: left;
+    width: 50%;
+}
+.chat-online li{
+    display: inline-block;
+}
+address{
+    width: 50%;
+    float: right;
+}
+address li{
+    padding-left: 5px;
+}
+/*footer styles*/
+footer a{
+    color: #d14343;
+    font-family:Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+    footer:after{
+   content: '';
+    display: block;
+    clear: both;
+}
+footer{
+    display: block;
+    border-top: 6px solid #bebebe;
+}
+footer p{
+    font-size: 12px;
+    margin-top: 10px; 
+    margin-left: 20px;
+}
+.social{
+    float:right;
+}
+.copyright{
+    float: left;
+}
